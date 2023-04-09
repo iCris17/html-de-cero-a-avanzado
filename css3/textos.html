@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Textos y alineaciones</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron&family=Roboto&display=swap"
+    rel="stylesheet"> 
+    <style>
+        body {
+            font-family: arial, sans-serif;
+            font-size: 1.125rem;
+        }
+        /* Propiedad TEXT ALIGN*/
+        #derecha {
+            text-align: right;
+        }
+        #centro {
+            text-align: center;
+        }
+        #justificado {
+            text-align: justify;
+        }
+        /* Cómo agregar sangría a un texto */
+        #texto-con-sangria{
+            text-indent: 4%;
+        }
+
+        /* Propiedad TEXT-DECORATION */
+        #subrayado {
+            text-decoration: underline double;
+        }
+        #linea-superior {
+            text-decoration: overline dashed;
+        }
+        #tachado {
+            text-decoration: line-through wavy red;
+        }
+
+        /* Como transformar textos */
+        #mayusculas {
+            text-transform: uppercase;
+        }
+        #minusculas {
+            text-transform: lowercase;
+        }
+        #letra-capital {
+            text-transform: capitalize;
+        }
+
+        /* Como controlar el interlineado de un texto */
+        #interlineado{
+            line-height: 1.9;
+        }
+        #interlineado-2 {
+            line-height: 250%;
+        }
+
+        /* Cómo aplicar sombras a un texto */
+        #texto-con-sombra {
+            text-shadow: 8px 4px 4px green;
+            font-size: 3rem;
+        }
+        #multiple {
+            font-size: 3rem;
+            text-shadow: 0 1px 0 yellow,
+                         1px 0 0 yellowgreen,
+                         1px 2px 1px green,
+                         2px 1px 1px greenyellow,
+                         2px 3px 2px grey,
+                         3px 2px 2px blue,
+                         4px 9px 3px black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Propiedades relacionadas con el texto</h1>
+
+    <h2>Propiedad text-align</h2>
+    <p>Este muestro se muestra alineado hacia la izquierda (por defecto).</p>
+    <p id="derecha">Este muestro se muestra alineado hacia la derecha.</p>
+    <p id="centro">Este muestro se muestra alineado hacia el centro.</p>
+    <p id="justificado">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quod ad
+    assumenda id atque est! Voluptas ad odit, praesentium accusamus tempora nisi
+    impedit reprehenderit optio similique mollitia labore rem dolorem.</p>
+    <h2>Propiedad text-indent</h2>
+    <p>Este texto se muestra sin sangría</p>
+    <p id="texto-con-sangria">Este texto se muestra con sangría</p>
+    
+    <h2>Propiedad text-decoration</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+    <p id="subrayado">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+    <p id="linea-superior">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+    <p id="tachado">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+
+    <h2>Propiedad text-transform</h2>
+    <p id="mayusculas">Este texto se muestra en mayúsculas</p>
+    <p id="minusculas">Este texto se muestra en minúsculas</p>
+    <p id="letra-capital">La primera letra de cada palabra de este texto se muestra en mayúsculas</p>
+
+    <h2></h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
+    tempora enim, praesentium beatae vitae nemo eveniet totam culpa laborum
+    sapiente eius excepturi consequuntur, eligendi ad molestiae! Dolor
+    laboriosam voluptatem repellat.</p>
+    <p id="interlineado">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium rem
+    soluta temporibus officiis dicta, odio omnis totam reiciendis natus eaque
+    distinctio pariatur maiores cupiditate veritatis itaque facere repellat
+    voluptatem laborum?</p>
+    <p id="interlineado-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+    sequi ipsam, qui veniam asperiores voluptatibus? Nisi id corporis veritatis
+    temporibus laborum consequuntur voluptas libero incidunt, modi tempore rerum
+    quas aliquam!</p>
+
+    <h2>Propiedad text-shadow</h2>
+    <p id="texto-con-sombra">Este es un texto con sombra</p>
+    <p id="multiple">Este texto tiene múltiples sombras</p>
+</body>
+</html>

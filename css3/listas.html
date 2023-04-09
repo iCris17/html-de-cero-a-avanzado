@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cómo aplicar estilos a las listas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron&family=Roboto&display=swap"
+    rel="stylesheet"> 
+    <script src="js/prefixfree.js"></script>
+    <style>
+        html, body{
+            height: 100%;
+        }
+        body {
+            font-family: arial, sans-serif;
+            font-size: 1.125rem;
+        }
+
+        /* Cómo aplicar estilos a las listas */
+        ul {
+            list-style-type: square;
+        }
+
+        ol {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        #listaImagen{
+            list-style: url("images/checkmark.png") inside;
+        }
+
+        #listaPosicion {
+            list-style-position: inside;
+        }
+
+        /* Cómo crear un menú vertical */
+        #menuVertical {
+            background-color: #eee;
+            width: 50%;
+            list-style: none;
+            padding: 0 1px;
+        }
+
+        #menuVertical li{
+            border: 1px solid;
+        }
+
+        #menuVertical li a{
+            color: #000;
+            display: block;
+            padding: 12px;
+            text-decoration: none;
+        }
+
+        #menuVertical li a:hover{
+            background-color: #ccc;
+        }
+
+        #menuVertical li a.actual{
+            background-color: #4c4eaf;
+            color: #fff
+        }
+
+        /* Cómo crear un menú horizontal*/
+        header ul{
+            background-color: #333;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        header ul li {
+            float: left;
+        }
+
+        header ul li a {
+            display: block;
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+            padding: 14px 16px;
+        }
+
+        header ul li a:hover {
+            background-color: #111;
+        }
+
+        header ul li a:active {
+            background-color: #4c4eaf;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="#" class="active">Inicio</a></li>
+            <li><a href="#">Acerca de</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </header>
+   <h1>Aplicar estilos a listas de HTML</h1>
+
+   <h2>Listas desordenadas</h2>
+   <ul>
+        <li>Ensaladas</li>
+        <li>Pescados y mariscos</li>
+        <li>Carnes y aves</li>
+   </ul>
+
+   <h2>Listas ordenadas</h2>
+   <ol>
+        <li>Primero</li>
+        <li>Segundo</li>
+        <li>Tercero</li>
+   </ol>
+
+   <h2>Lista con imágenes</h2>
+   <ul id="listaImagen">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+   </ul>
+
+   <h2>Controlar la identación de elementos sobre la lista</h2>
+   <ul id="listaPosicion">
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex,
+        excepturi tempore deserunt est optio explicabo dolorem iste commodi nisi
+        placeat molestias aspernatur omnis illum deleniti quis! Praesentium
+        earum delectus cum!</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex,
+        excepturi tempore deserunt est optio explicabo dolorem iste commodi nisi
+        placeat molestias aspernatur omnis illum deleniti quis! Praesentium
+        earum delectus cum!</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex,
+        excepturi tempore deserunt est optio explicabo dolorem iste commodi nisi
+        placeat molestias aspernatur omnis illum deleniti quis! Praesentium
+        earum delectus cum!</li>
+   </ul>
+
+   <h2>Menú vertical</h2>
+   <ul id="menuVertical">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#" class="actual">Acerca de</a></li>
+        <li><a href="#">Servicios</a></li>
+        <li><a href="#">Contacto</a></li>
+   </ul>
+</body>
+</html>

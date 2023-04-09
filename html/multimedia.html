@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Elementos multimedia HTML</title>
+</head>
+<body>
+	<h1>Multimedia en HTML</h1>
+	<h2>Reproductor de audio</h2>
+	<audio controls autoplay>
+		<source src="recursos/video.mp3" type="audio/mp3">
+		<source src="recursos/video.ogg" type="audio/ogg">
+		<source src="recursos/video.wav" type="audio/wav">
+		<p>No se puede reproducir el archivo. El formato no es compatible con su navegador. Utilice otro navegador o contacte al Administrador</p>
+	</audio>
+
+	<h2>Reproductor de vídeos</h2>
+	<video controls width="500" height="281">
+		<source src="recursos/video.mp4" type="video/mp4">
+		<source src="recursos/video.ogg" type="video/ogg">
+		<source src="recursos/video.webm" type="video/webm">
+		<p>El vídeo no ha podido reproducirse debido a que este formato de archivo no es compatible con su navegador.</p>
+	</video>
+
+	<h2>Recurso incrustado</h2>
+	<iframe src="https://es.wikipedia.org/wiki/Fernando_Llorente" width="1000" height="500" allowfullscreen></iframe>
+	<br>
+	<br>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/Ufx1MLh26_8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	<br>
+	<br>
+	<!-- Incrustar animación en formato flash -->
+	<object data="recursos/animacion1.swf" width="300" height="350">
+		<param name="movie" value="recursos/animacion1.swf">
+		<param name="quality" value="high">
+		<param name="wmode" value="transparent">
+	</object>
+</html>

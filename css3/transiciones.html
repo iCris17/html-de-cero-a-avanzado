@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transiciones CSS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron&family=Roboto&display=swap"
+    rel="stylesheet"> 
+    <script src="js/prefixfree.js"></script>
+    <style>
+        html, body{
+            height: 100%;
+        }
+        body {
+            font-family: arial, sans-serif;
+            font-size: 1.125rem;
+        }
+        /* Cómo aplicar un efecto de transición */
+        div {
+            background-color: #008000;
+            width: 200px;
+            height: 200px;
+            margin: 90px auto;
+            transition: all 1.5s ease-in 3s;
+            -webkit-transition: all 1.5s ease-in 3s;
+            -o-transition: all 1.5s ease-in 3s;
+        }
+        div:hover {
+            background-color: #ffff00;
+            width: 500px;
+            height: 300px;
+            box-shadow: 2px 5px 5px #ccc;
+            transition: all 1.5s ease-in 3s;
+            -webkit-transition: all 1.5s ease-in 3s;
+            -o-transition: all 1.5s ease-in 3s;
+        }
+    </style>
+</head>
+<body>
+   <div></div>
+</body>
+</html>

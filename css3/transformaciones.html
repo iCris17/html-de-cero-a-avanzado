@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformar elementos con CSS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron&family=Roboto&display=swap"
+    rel="stylesheet"> 
+    <script src="js/prefixfree.js"></script>
+    <style>
+        html, body{
+            height: 100%;
+        }
+        body {
+            font-family: arial, sans-serif;
+            font-size: 1.125rem;
+        }
+        /* Cómo trasladar elementos */
+        #trasladar {
+            background-color: #ffff00;
+            width: 330px;
+            height: 200px;
+            border: 1px solid;
+            padding: 20px 30px;
+            margin: 20px 200px;
+            transform: translate(500px, 180px);
+            -webkit-transform: translate(500px, 180px);
+            -ms-transform: translate(500px, 180px);
+        }
+        /* Cómo escalar elementos */
+        #escalar {
+            background-color: #008000;
+            width: 440px;
+            height: 200px;
+            border: 1px solid;
+            color: #fff;
+            padding: 12px;
+            margin: 90px;
+            transform: scale(2, 0.90);
+            -webkit-transform: scale(2, 0.90);
+            -ms-transform: scale(2, 0.90);
+        }
+        /* Cómo sesgar elementos*/
+        #sesgar {
+            background-color: #002980;
+            width: 500px;
+            height: 200px;
+            margin: 90px;
+            transform: skew(20deg, 16deg);
+            -webkit-transform: skew(20deg, 16deg);
+            -ms-transform: skew(20deg, 16deg);
+        }
+        /* Cómo rotar elementos */
+        #rotar {
+            background-color: #00ffff;
+            width: 200px;
+            height: 250px;
+            padding: 12px;
+            margin: 90px;
+            transform: rotate(-45deg) translate(240px, 250px);
+            -webkit-transform: rotate(-45deg) translate(240px, 250px);
+            -ms-transform: rotate(-45deg) translate(240px, 250px);
+        }
+        /* Cómo modificar el punto de origen */
+        #punto-origen{
+            background-color: #ffa500;
+            width: 500px;
+            height: 500px;
+            margin: 30px auto 90px;
+            -webkit-transition: -webkit-transform 3s ease-in 1s;
+            transition: -webkit-transform 3s ease-in 1s;
+            -o-transition: transform 3s ease-in 1s;
+            transition: transform 3s ease-in 1s;
+            transition: transform 3s ease-in 1s, -webkit-transform 3s ease-in 1s;
+            -webkit-transform-origin: 45% 90%;
+            -ms-transform-origin: 45% 90%;
+            transform-origin: 45% 90%;
+        }
+
+        #punto-origen:hover{
+            -webkit-transform: rotate(360deg);
+            -ms-transform: rotate(360deg);
+            transform: rotate(360deg);
+            -webkit-transition: -webkit-transform 3s ease-in 1s;
+            transition: -webkit-transform 3s ease-in 1s;
+            -o-transition: transform 3s ease-in 1s;
+            transition: transform 3s ease-in 1s;
+            transition: transform 3s ease-in 1s, -webkit-transform 3s ease-in 1s;
+        }
+        /* Cómo crear efecto de profundidad*/
+        #contenedor {
+            width: 400px;
+            height: 490px;
+            border: 1px solid;
+            padding: 50px;
+            margin: 30px auto;
+            perspective: 200px;
+            -webkit-perspective: 200px;
+        }
+
+        #elemento {
+            background-color: #ffff00;
+            width: 150px;
+            height: 150px;
+            padding: 40px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 30px;
+            text-align: center;
+            transform: rotate3d(-1, 1, 1, 36deg);
+            -webkit-transform: rotate3d(-1, 1, 1, 36deg);
+        }
+    </style>
+</head>
+<body>
+   <h1>Propiedad Transform</h1>
+
+   <h2>Función translate()</h2>
+   <div id="trasladar">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores,
+   explicabo praesentium quasi consequuntur tenetur reiciendis. Inventore,
+   incidunt! Distinctio laborum quibusdam rerum fugiat quaerat ratione nostrum
+   dolorem modi. Veritatis, molestiae odit.</div>
+   <h2>Función scale()</h2>
+   <div id="escalar">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, illo
+   nulla. Quibusdam, saepe, ab qui error soluta cum, tempora eius maxime
+   deleniti velit ullam impedit exercitationem perspiciatis accusantium rem
+   repellat!</div>
+   <h2>Función skew()</h2>
+   <div id="sesgar"></div>
+   <h2>Función rotate()</h2>
+   <div id="rotar">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum
+   sunt odio optio qui in cum nisi fugit inventore tenetur fugiat eos eaque
+   facere itaque rem aperiam, enim beatae doloribus sed!</div>
+   <h2>Propiedad transform-origin</h2>
+   <div id="punto-origen"></div>
+
+   <h2>Transformaciones 3D</h2>
+   <div id="contenedor">
+        <div id="elemento">3D</div>
+   </div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modificar el modelo de cajas de CSS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron&family=Roboto&display=swap"
+    rel="stylesheet"> 
+    <style>
+        html {
+            box-sizing: border-box;
+        }
+        *, *::before, *::after{
+            box-sizing: border-box;
+        }
+        html, body{
+            height: 100%;
+        }
+        body {
+            font-family: arial, sans-serif;
+            font-size: 1.125rem;
+        }
+        .caja {
+            width: 424px;
+            float: left;
+            margin: 0px 10px;
+            border: 1px solid;
+            padding: 5px 12px;
+        }
+        img {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cómo modificar el modelo de cajas tradicional</h1>
+    <h2>Contenido en columnas</h2>
+    <div class="caja">
+        <img src="images/perro.jpg" alt="Imagen de un perro.">
+        <h2>Cómo adiestrar a tu perro</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis
+        deleniti ducimus sunt incidunt nesciunt voluptatibus iste animi eius
+        perspiciatis cupiditate excepturi asperiores doloribus sint, fugiat
+        corporis qui exercitationem? Labore, aut.</p>
+        <a href="">Leer más...</a>
+    </div>
+    <div class="caja">
+        <img src="images/perro.jpg" alt="Imagen de un perro.">
+        <h2>Cómo adiestrar a tu perro</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis
+        deleniti ducimus sunt incidunt nesciunt voluptatibus iste animi eius
+        perspiciatis cupiditate excepturi asperiores doloribus sint, fugiat
+        corporis qui exercitationem? Labore, aut.</p>
+        <a href="">Leer más...</a>
+    </div>
+    <div class="caja">
+        <img src="images/perro.jpg" alt="Imagen de un perro.">
+        <h2>Cómo adiestrar a tu perro</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis
+        deleniti ducimus sunt incidunt nesciunt voluptatibus iste animi eius
+        perspiciatis cupiditate excepturi asperiores doloribus sint, fugiat
+        corporis qui exercitationem? Labore, aut.</p>
+        <a href="">Leer más...</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplos de Pseudo-elementos</title>
+    <style>
+        /* Pseudo-elemento ::first-letter*/
+        p#primeraLetra::first-letter {
+            color: red;
+            font-size: 30px;
+        }
+        /* Pseudo-elemento ::first-line */
+        p#primeraLinea::first-line {
+            color: blue;
+        }
+        /* Pseudo-elementos :::before y :::after */
+        p.error::before {
+            content: url(images/danger.png);
+            vertical-align: middle;
+            padding-right: 3px;
+        }
+        p.error span::after{
+            content: "ATENCIÓN";
+            color: red;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo-elementos CSS</h1>
+    <p id="primeraLetra">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo cumque
+    accusantium, odio quibusdam odit sapiente perspiciatis modi nemo dolor
+    tempore molestias quidem nihil maxime incidunt blanditiis in quasi.
+    Corporis, saepe!</p>
+    <p id="primeraLinea">Illo pariatur perspiciatis velit eos facilis perferendis quam accusamus
+    doloremque dolorem, veniam aperiam nihil! Ut deleniti amet aut dolor
+    perspiciatis cupiditate! Nihil suscipit possimus nam distinctio tenetur
+    placeat quisquam ipsam.</p>
+    <p class="error"><span></span> dolor blanditiis quos, nostrum repellendus cum dolorem? Libero
+    labore, harum ipsa doloremque ducimus sed provident veniam, enim ratione cum
+    a. Explicabo doloremque eaque culpa quia temporibus aliquam perspiciatis
+    numquam!</p>
+    <p>Sed necessitatibus odit, vitae omnis excepturi culpa laboriosam eligendi
+    quod quisquam ducimus deserunt quis ipsa voluptatum at distinctio. Error
+    maiores repellendus vitae rerum nam quod hic excepturi id explicabo
+    facere!</p>
+    <p class="error"><span></span> quasi, obcaecati tempora illum a quibusdam qui architecto asperiores
+    aut natus porro at soluta ullam quas minus sed est quam explicabo quo fugit
+    sit? Placeat voluptates animi molestiae. Temporibus!</p>
+</body>
+</html>
